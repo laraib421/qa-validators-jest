@@ -1,0 +1,20 @@
+{
+  "name": "qa-validators-jest",
+  "version": "1.0.0",
+  "description": "Form validation library with 100% unit-test coverage using Jest",
+  "main": "src/validators.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": ["src/**/*.js"],
+    "coverageThreshold": {
+      "global": { "branches": 90, "functions": 100, "lines": 95, "statements": 95 }
+    }
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "license": "MIT"
+}
